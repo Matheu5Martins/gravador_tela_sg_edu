@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Gravador de tela
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="gravador.js"></script>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <span>
+            <a id="download" style="display: none;">
+                <button type="button" class="btn btn-primary mb-4">
+                    Download
+                </button>
+            </a>
+        </span>
+        <button type="button" class="btn btn-danger" id="stop" disabled>
+            Parar gravação
+        </button>
+        <button type="button" class="btn btn-info" id="recordAudio">
+            Gravar audio
+        </button>
+        <button type="button" class="btn btn-info" id="recordVideo">
+            Gravar video
+        </button>
+        <button type="button" class="btn btn-info" id="recordScreen">
+            Gravar tela
+        </button>
+        <div class="">
+            <video autoplay height='480' width="640" muted></video>
+        </div>
+    </div>
+</body>
